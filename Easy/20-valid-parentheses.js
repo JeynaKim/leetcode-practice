@@ -3,13 +3,12 @@ Given a string s containing just the characters '(', ')', '{', '}', '[' and ']',
 determine if the input string is valid
 */
 
-/**
- * @param {string} s
- * @return {boolean}
- */
+// /**
+//  * @param {string} s
+//  * @return {boolean}
+//  */
 
 const isValid = (s) => {
-  let result = true;
   let y = [];
   let a = {
     ")": "(",
@@ -26,5 +25,5 @@ const isValid = (s) => {
       return false;
     }
   }
-  return result;
+  return y.length == 0;
 };
