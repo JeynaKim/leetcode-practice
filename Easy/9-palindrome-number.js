@@ -11,5 +11,3 @@ var isPalindrome = function(x) {
   const reversedNumber = x.toString().split('').reverse().join('');
   return (x == reversedNumber ? true : false);
 };
-
-
