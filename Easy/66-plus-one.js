@@ -14,5 +14,5 @@ var plusOne = function (digits) {
   return result;
 }
 
-// console.log(plusOne([4, 3, 2, 1]));
-// console.log(plusOne([9]));
+console.log(plusOne([4, 3, 2, 1]));
+console.log(plusOne([9]));
