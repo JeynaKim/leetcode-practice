@@ -14,10 +14,16 @@ Given the head of a sorted linked list, delete all duplicates such that each ele
  * @param {ListNode} head
  * @return {ListNode}
  */
-var deleteDuplicates = function (head) {
-  let arr1 = [];
-  let arr2 = [];
-    
+var deleteDuplicates = function(head) {
+  let now = head;
+  while (now) {
+    if (now.next && now.next.val === now.val) {
+      now.next = now.next.next;
+    } else {
+      now = now.next;
+    }
+  }
+  return head;
 };
 
 
